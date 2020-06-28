@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'gothic', sans-serif;
 }
+body {overflow-x: hidden;}
 /*===================HEADER=================*/
 header {
     height: 100vh;
@@ -22,7 +23,6 @@ header nav {
 }
 nav .logo {
     font-size: 18px;
-    font-weight: 100;
     color: white;
 }
 nav .nav-links {
@@ -107,7 +107,7 @@ header .find-container {
 }
 .heading h1 {
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 600;
     text-align: center;
 }
 .heading p {
@@ -208,14 +208,13 @@ header .find-container {
     font-weight: 100;
 }
 .details .items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
 }
 .details .item {
     border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 40px;
+    padding: 30px;
     border-radius: 100px;
 }
 .details .item h1 {
@@ -262,7 +261,7 @@ header .find-container {
 }
 #messages .container h1 {
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
 }
 #messages .slider-container {
     width: 100%;
@@ -485,6 +484,9 @@ footer .hang-out {
 @media screen and (max-width: 450px) {
     header .container {width: 95%;}
     header .container .logo{font-size: 15px;}
+    header nav {height: 10vh;}
+    header .header-content {height: 80vh;}
+    header .find-container {height: 10vh;}
     .nav-links li {padding: 0px 8px;}
     .nav-links li a {font-size: 10px;}
     header .find-container {
@@ -523,21 +525,17 @@ footer .hang-out {
     }    
 }
 /*==========DETAILS & NEWSLETTER============*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
     #details-newsletter .container{
         width: 70%;
     }
 }
-@media screen and (max-width: 630px) {
-    #details-newsletter .container{
-        width: 80%;
-    }
+@media screen and (max-width: 600px) {
     .details .items {
-        width: 35%;
-        margin: auto;
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-gap: 2rem;
+        justify-content: center; 
     }
-    .details .item {padding: 35px 0px;}
 }
 @media screen and (max-width: 450px) {
     .newsletter input {

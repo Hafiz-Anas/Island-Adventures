@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'gothic', sans-serif;
+    font-family: 'century', sans-serif;
 }
 body {overflow-x: hidden;}
 /*===================HEADER=================*/
@@ -52,14 +52,14 @@ header .header-content {
     align-items: center;
     text-align: center;
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .header-content h1 {
     font-size: 40px;
-    font-family: cursive;
 }
 .header-content p {
     padding: 20px 0px;
-    color: rgb(207, 207, 207);
+    color: rgb(225, 225, 225);
     font-size: 14px;
 }
 header .find {
@@ -300,6 +300,7 @@ header .find-container {
 #messages .message-info .message p{
     text-align: start;
     font-size: 12px;
+    letter-spacing: .5px;
     line-height: 21px;
     font-style: italic;
     color: rgb(85, 85, 85);
@@ -487,11 +488,11 @@ footer .hang-out {
     header nav {height: 10vh;}
     header .header-content {height: 80vh;}
     header .find-container {height: 10vh;}
-    .nav-links li {padding: 0px 8px;}
+    .nav-links li {padding: 0px 6px;}
     .nav-links li a {font-size: 10px;}
+    .nav-links .side-btn {padding: 6px 9px;}
     header .find-container {
         width: 90%;
-        grid-template-columns: 1fr 1fr .5fr;
         grid-gap: 1rem;
     }
 }
